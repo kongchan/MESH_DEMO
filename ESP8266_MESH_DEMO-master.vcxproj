@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFDCEF22-A233-449F-B1BC-B4984D21CF58}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="mesh_demo\demo\devicefind.c" />
+    <ClCompile Include="mesh_demo\demo\esp_touch.c" />
+    <ClCompile Include="mesh_demo\demo\gpio16.c" />
+    <ClCompile Include="mesh_demo\demo\http_post.c" />
+    <ClCompile Include="mesh_demo\demo\key.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_bin.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_demo.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_device.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_http.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_json.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_mqtt.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_none.c" />
+    <ClCompile Include="mesh_demo\demo\mesh_parser.c" />
+    <ClCompile Include="mesh_demo\demo\mqtt.c" />
+    <ClCompile Include="mesh_demo\demo\mqtt_msg.c" />
+    <ClCompile Include="mesh_demo\demo\proto.c" />
+    <ClCompile Include="mesh_demo\demo\queue.c" />
+    <ClCompile Include="mesh_demo\demo\ringbuf.c" />
+    <ClCompile Include="mesh_demo\demo\tcpClient.c" />
+    <ClCompile Include="mesh_demo\demo\uart.c" />
+    <ClCompile Include="mesh_demo\demo\user_key.c" />
+    <ClCompile Include="mesh_demo\demo\user_main.c" />
+    <ClCompile Include="mesh_demo\demo\user_mqtt.c" />
+    <ClCompile Include="mesh_demo\demo\user_set.c" />
+    <ClCompile Include="mesh_demo\demo\user_time.c" />
+    <ClCompile Include="mesh_demo\demo\user_upgrade.c" />
+    <ClCompile Include="mesh_demo\demo\utils.c" />
+    <ClCompile Include="mesh_demo\demo\V9881.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\c_types.h" />
+    <ClInclude Include="include\eagle_soc.h" />
+    <ClInclude Include="include\espconn.h" />
+    <ClInclude Include="include\ets_sys.h" />
+    <ClInclude Include="include\gpio.h" />
+    <ClInclude Include="include\gpio16.h" />
+    <ClInclude Include="include\i2c_master.h" />
+    <ClInclude Include="include\ip_addr.h" />
+    <ClInclude Include="include\json\json.h" />
+    <ClInclude Include="include\json\jsonparse.h" />
+    <ClInclude Include="include\json\jsontree.h" />
+    <ClInclude Include="include\key.h" />
+    <ClInclude Include="include\mem.h" />
+    <ClInclude Include="include\mesh.h" />
+    <ClInclude Include="include\osapi.h" />
+    <ClInclude Include="include\os_type.h" />
+    <ClInclude Include="include\ping.h" />
+    <ClInclude Include="include\queue.h" />
+    <ClInclude Include="include\sdio_slv.h" />
+    <ClInclude Include="include\slc_register.h" />
+    <ClInclude Include="include\smartconfig.h" />
+    <ClInclude Include="include\sntp.h" />
+    <ClInclude Include="include\spi.h" />
+    <ClInclude Include="include\spi_flash.h" />
+    <ClInclude Include="include\spi_interface.h" />
+    <ClInclude Include="include\spi_overlap.h" />
+    <ClInclude Include="include\spi_register.h" />
+    <ClInclude Include="include\uart.h" />
+    <ClInclude Include="include\uart_register.h" />
+    <ClInclude Include="include\upgrade.h" />
+    <ClInclude Include="include\user_interface.h" />
+    <ClInclude Include="mesh_demo\demo\gpio16.h" />
+    <ClInclude Include="mesh_demo\demo\user_main.h" />
+    <ClInclude Include="mesh_demo\demo\user_time.h" />
+    <ClInclude Include="mesh_demo\demo\user_upgrade.h" />
+    <ClInclude Include="mesh_demo\include\at_custom.h" />
+    <ClInclude Include="mesh_demo\include\debug.h" />
+    <ClInclude Include="mesh_demo\include\esp_touch.h" />
+    <ClInclude Include="mesh_demo\include\http_post.h" />
+    <ClInclude Include="mesh_demo\include\mesh_bin.h" />
+    <ClInclude Include="mesh_demo\include\mesh_device.h" />
+    <ClInclude Include="mesh_demo\include\mesh_http.h" />
+    <ClInclude Include="mesh_demo\include\mesh_json.h" />
+    <ClInclude Include="mesh_demo\include\mesh_mqtt.h" />
+    <ClInclude Include="mesh_demo\include\mesh_none.h" />
+    <ClInclude Include="mesh_demo\include\mesh_parser.h" />
+    <ClInclude Include="mesh_demo\include\mqtt.h" />
+    <ClInclude Include="mesh_demo\include\mqtt_msg.h" />
+    <ClInclude Include="mesh_demo\include\proto.h" />
+    <ClInclude Include="mesh_demo\include\queue.h" />
+    <ClInclude Include="mesh_demo\include\ringbuf.h" />
+    <ClInclude Include="mesh_demo\include\smartconfig.h" />
+    <ClInclude Include="mesh_demo\include\tcpclient.h" />
+    <ClInclude Include="mesh_demo\include\typedef.h" />
+    <ClInclude Include="mesh_demo\include\uart.h" />
+    <ClInclude Include="mesh_demo\include\uart_register.h" />
+    <ClInclude Include="mesh_demo\include\user_config.h" />
+    <ClInclude Include="mesh_demo\include\user_devicefind.h" />
+    <ClInclude Include="mesh_demo\include\user_esp_platform.h" />
+    <ClInclude Include="mesh_demo\include\user_esp_platform_timer.h" />
+    <ClInclude Include="mesh_demo\include\user_iot_version.h" />
+    <ClInclude Include="mesh_demo\include\user_json.h" />
+    <ClInclude Include="mesh_demo\include\user_key.h" />
+    <ClInclude Include="mesh_demo\include\user_light.h" />
+    <ClInclude Include="mesh_demo\include\user_light_adj.h" />
+    <ClInclude Include="mesh_demo\include\user_mqtt.h" />
+    <ClInclude Include="mesh_demo\include\user_plug.h" />
+    <ClInclude Include="mesh_demo\include\user_sensor.h" />
+    <ClInclude Include="mesh_demo\include\user_set.h" />
+    <ClInclude Include="mesh_demo\include\user_webserver.h" />
+    <ClInclude Include="mesh_demo\include\utils.h" />
+    <ClInclude Include="mesh_demo\include\V9881.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\blank.bin" />
+    <None Include="bin\boot_v1.2.bin" />
+    <None Include="bin\boot_v1.4(b1).bin" />
+    <None Include="bin\esp_init_data_default.bin" />
+    <None Include="bin\upgrade\user1.1024.new.2.bin" />
+    <None Include="bin\upgrade\user2.1024.new.2.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
